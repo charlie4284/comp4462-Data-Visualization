@@ -27,10 +27,10 @@ export default class App extends React.Component {
       <div style={appStyle} className="app">
         <Titlebar />
         <Grid style={{paddingTop:'1em', background:"#eeeeee"}}>
-          <Grid.Column style={{paddingTop: '5em', height:`100vh`}} width={2}>
+          <Grid.Column style={{paddingTop: '5em', height:`100vh`}} width={1}>
             <Navbar />
           </Grid.Column>
-          <Grid.Column width={11} style={{padding:0, paddingTop:'7em'}}>
+          <Grid.Column width={12} style={{padding:0, paddingTop:'7em'}}>
             <Container style={containerStyle}>
               <Switch>
                 <Route path="/" exact component={Camelot} />

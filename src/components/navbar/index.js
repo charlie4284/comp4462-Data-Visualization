@@ -6,9 +6,9 @@ import { changeTab } from '../../rootReducer';
 
 class Navbar extends React.Component {
     render(){
-        const { tab, backgroundColor, changeTabInfo } = this.props;
+        const { tab, changeTabInfo } = this.props;
         return (
-            <Menu pointing secondary vertical style={{border:'none'}}>
+            <Menu pointing secondary vertical style={{border:'none', width:'100px'}}>
                 <Menu.Item 
                     name='Camelot' 
                     as={Link} to="/camelot" 
