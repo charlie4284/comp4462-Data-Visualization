@@ -9,20 +9,25 @@ class Navbar extends React.Component {
         const { tab, backgroundColor, changeTabInfo } = this.props;
         return (
             <Menu pointing secondary vertical style={{border:'none'}}>
-                <Menu.Item name='Camelot' as={Link} to="/camelot" active={tab === 'camelot'} onClick={()=>changeTabInfo('camelot')} />
-                <Menu.Item
-                name='BPM'
-                as={Link}
-                to="/bpm"
-                active={tab === 'BPM'}
-                onClick={()=>changeTabInfo('BPM')}
+                <Menu.Item 
+                    name='Camelot' 
+                    as={Link} to="/camelot" 
+                    active={tab === 'camelot'} 
+                    onClick={()=>changeTabInfo('camelot')} 
                 />
                 <Menu.Item
-                name='Key'
-                as={Link}
-                to="/key"
-                active={tab === 'Key'}
-                onClick={()=>changeTabInfo('Key')}
+                    name='BPM'
+                    as={Link}
+                    to="/bpm"
+                    active={tab === 'BPM'}
+                    onClick={()=>changeTabInfo('BPM')}
+                />
+                <Menu.Item
+                    name='Key'
+                    as={Link}
+                    to="/key"
+                    active={tab === 'Key'}
+                    onClick={()=>changeTabInfo('Key')}
                 />
             </Menu>
         )

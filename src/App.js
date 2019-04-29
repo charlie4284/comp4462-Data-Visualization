@@ -10,7 +10,7 @@ import { Grid, Container } from 'semantic-ui-react';
 
 const appStyle = {
   width:'100vw', 
-  height:'100vh',
+  background: "#eeeeee"
 }
 const containerStyle = {
   width:'100%',
@@ -18,19 +18,19 @@ const containerStyle = {
   // border:'1px solid black',
   display:'flex',
   justifyContent:'center',
-  alignItems:'center'
+  alignItems:'center',
+  padding:0
 }
-
 export default class App extends React.Component {
   render(){
     return (
       <div style={appStyle} className="app">
         <Titlebar />
-        <Grid style={{paddingTop:'1em'}}>
-          <Grid.Column style={{paddingTop: '7em', height:`100vh`}} width={2}>
+        <Grid style={{paddingTop:'1em', background:"#eeeeee"}}>
+          <Grid.Column style={{paddingTop: '5em', height:`100vh`}} width={2}>
             <Navbar />
           </Grid.Column>
-          <Grid.Column width={10} style={{padding:0, paddingTop:'7em'}}>
+          <Grid.Column width={11} style={{padding:0, paddingTop:'7em'}}>
             <Container style={containerStyle}>
               <Switch>
                 <Route path="/" exact component={Camelot} />
@@ -41,7 +41,7 @@ export default class App extends React.Component {
               </Switch>
             </Container>
           </Grid.Column>
-          <Grid.Column width={4} style={{padding:0, paddingTop:'7em', height:'100vh'}}>
+          <Grid.Column width={3} style={{padding:0, paddingTop:'7em', height:'100vh'}}>
             <Container style={containerStyle}>
               <Chart />
             </Container>
